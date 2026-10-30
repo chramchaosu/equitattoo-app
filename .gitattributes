@@ -1,0 +1,18 @@
+# Store text with LF line endings everywhere, so Windows and CI see identical files
+* text=auto eol=lf
+
+# Windows scripts need CRLF
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary files: never touch these
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.woff2 binary
+*.wasm binary
+*.pdf binary

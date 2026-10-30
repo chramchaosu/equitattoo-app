@@ -1,0 +1,33 @@
+# Dependencies and build output
+node_modules/
+dist/
+.angular/
+coverage/
+playwright-report/
+test-results/
+
+# Firebase local files
+.firebase/
+*-debug.log
+ui-debug.log
+
+# Secrets must never be committed. Keep this list broad on purpose.
+.env
+.env.*
+!.env.example
+*service-account*.json
+*-adminsdk-*.json
+*.pem
+*.key
+
+# Local data: exports and backups can contain client names and photos
+*backup*.json
+emulator-data/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
